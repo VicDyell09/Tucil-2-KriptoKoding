@@ -458,9 +458,10 @@ class Ui_MainWindow(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Dekripsi), _translate("MainWindow", "Dekripsi"))
 
     def tulishasilketxt(self, kalimat):
-        with open("hasil.txt", "a") as f:
-            f.writelines(kalimat)
-            f.write("\n")
+        with open("hasil.txt","ab") as f:
+            for char in kalimat:
+                f.write(ord(char).to_bytes(1,byteorder="big"))
+            f.write(b'\n')
 
     def readfilebin(self, filename):
         bytes=[]
