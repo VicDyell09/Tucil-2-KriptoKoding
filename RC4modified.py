@@ -58,6 +58,7 @@ def ciphertext(cipher):
 # # --enkripsi--
 # key = input("enter key : ")
 # text = input("enter text : ")
+# print("enkripsi")
 # cipher = enkripRC4(key,text)
 # hex = cipherhex(cipher)
 # ctext = ciphertext(cipher)
@@ -78,8 +79,3 @@ def ciphertext(cipher):
 # print("Cipher hex :",hex)
 # print("Cipher str : ",ctext)
 # print("Cipher Base 64 : ",c64)
-
-
-
-
-  
