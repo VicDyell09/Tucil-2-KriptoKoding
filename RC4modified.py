@@ -35,7 +35,6 @@ def prga(s, n):
             u = (ord(ev.extvigenereencrypt(chr(s[t]),chr((t*s[i]) % 256))) % 256)
         else:
             u=s[t]
-        print(u)
         stream.append(u)
         n-=1
     return stream
